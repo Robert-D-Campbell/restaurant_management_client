@@ -25,11 +25,21 @@ db:
 rails_log:
 client_node_modules:
 
+## Boot up project using Docker.
+
+```
 docker-compose down -v
+```
 
+```
 docker-compose up -d --build
+```
 
-docker-compose run api rails db:create
+// CLI inside docker container
+
+```
+docker-compose run client (...)
+```
 
 ## Project setup
 
